@@ -1,5 +1,5 @@
 body {
-  background-image:url("https://dawnshot7.github.io/list_editor_website/night_sky.jpg");
+  background-image:url("https://dawnshot7.github.io/list_editor_website/src/images/night_sky.jpg");
   font: 14px "Century Gothic", Futura, sans-serif;
   color: white;
   margin: 20px;
@@ -47,7 +47,7 @@ label {
 .status {
   display: block;
   margin-bottom: 10px;
-  margin-left: 5px;
+  width: 110px;
 }
 
 .square {
