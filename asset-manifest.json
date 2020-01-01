@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/list_editor_website/static/css/main.e87cabc3.chunk.css",
+    "main.css": "/list_editor_website/static/css/main.0ff51aa6.chunk.css",
     "main.js": "/list_editor_website/static/js/main.22267596.chunk.js",
     "main.js.map": "/list_editor_website/static/js/main.22267596.chunk.js.map",
     "runtime-main.js": "/list_editor_website/static/js/runtime-main.6bc7f33d.js",
@@ -8,15 +8,15 @@
     "static/js/2.c1809de3.chunk.js": "/list_editor_website/static/js/2.c1809de3.chunk.js",
     "static/js/2.c1809de3.chunk.js.map": "/list_editor_website/static/js/2.c1809de3.chunk.js.map",
     "index.html": "/list_editor_website/index.html",
-    "precache-manifest.9eca61c0b2fb2fa74b7f8799a2ed08b7.js": "/list_editor_website/precache-manifest.9eca61c0b2fb2fa74b7f8799a2ed08b7.js",
+    "precache-manifest.d108008c856daa2f9d2a22c797c1f157.js": "/list_editor_website/precache-manifest.d108008c856daa2f9d2a22c797c1f157.js",
     "service-worker.js": "/list_editor_website/service-worker.js",
-    "static/css/main.e87cabc3.chunk.css.map": "/list_editor_website/static/css/main.e87cabc3.chunk.css.map",
+    "static/css/main.0ff51aa6.chunk.css.map": "/list_editor_website/static/css/main.0ff51aa6.chunk.css.map",
     "static/js/2.c1809de3.chunk.js.LICENSE": "/list_editor_website/static/js/2.c1809de3.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.6bc7f33d.js",
     "static/js/2.c1809de3.chunk.js",
-    "static/css/main.e87cabc3.chunk.css",
+    "static/css/main.0ff51aa6.chunk.css",
     "static/js/main.22267596.chunk.js"
   ]
 }
