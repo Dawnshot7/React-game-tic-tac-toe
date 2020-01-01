@@ -9,29 +9,7 @@ function Square(props) {
     </button>
   );
 }
-/*
-class Note extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
-    this.handleChange = this.handleChange.bind(this);
-  }
 
-  handleChange(event) {
-    //this.setState({value: event.target.value});
-    //this.props.onClick(this.state.value);
-    //this.setState({value: event.target.value});
-    this.props.onClick({value: event.target.value});
-    this.setState({value: this.props.currentNote});
-    //onClick={() => this.props.onClick(i)
-  }
-  render() {
-    return (
-          <input type="text" onChange={()=>this.props.onClick({event.target.value})} />
-    );
-  }
-}
-*/
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -65,6 +43,17 @@ class Board extends React.Component {
   }
 }
 
+class Input extends React.Component {
+  render() {
+    return (
+      <input
+        onChange={this.props.onValueChange}
+        value={this.props.value}
+        type="text"
+      />
+    );
+  }
+}
 
 class Game extends React.Component {
   constructor(props) {
@@ -109,11 +98,11 @@ class Game extends React.Component {
       xIsNext: (step % 2) === 0
     });
   }
+
   onValueChange(key, event) {
     this.setState({currentNote: event.target.value})
   }
 
-  
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
@@ -141,7 +130,7 @@ class Game extends React.Component {
     if (winner) {
       status = "Winner: " + winner;
     } else {
-      status = " player: " + (this.state.xIsNext ? "X" : "O");
+      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
 
     return (
@@ -162,19 +151,7 @@ class Game extends React.Component {
     );
   }
 }
-class Input extends React.Component {
- render() {
-     return (
 
-        <input
-          onChange={this.props.onValueChange}
-          value={this.props.value}
-          type="text"
-        />
-
-    );
-  }
-}
 // ========================================
 
 ReactDOM.render(<Game />, document.getElementById("root"));
