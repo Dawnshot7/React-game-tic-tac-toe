@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-game-tic-tak-toe/static/css/main.f096412c.chunk.css",
+    "main.css": "/React-game-tic-tak-toe/static/css/main.4f0a833b.chunk.css",
     "main.js": "/React-game-tic-tak-toe/static/js/main.133a2334.chunk.js",
     "main.js.map": "/React-game-tic-tak-toe/static/js/main.133a2334.chunk.js.map",
     "runtime-main.js": "/React-game-tic-tak-toe/static/js/runtime-main.6ee3f6de.js",
@@ -8,16 +8,16 @@
     "static/js/2.c1809de3.chunk.js": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js",
     "static/js/2.c1809de3.chunk.js.map": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js.map",
     "index.html": "/React-game-tic-tak-toe/index.html",
-    "precache-manifest.24d264927759cf2ab6d836f635312f51.js": "/React-game-tic-tak-toe/precache-manifest.24d264927759cf2ab6d836f635312f51.js",
+    "precache-manifest.25ec15135c4cd5b0f9787b4ed4a2247a.js": "/React-game-tic-tak-toe/precache-manifest.25ec15135c4cd5b0f9787b4ed4a2247a.js",
     "service-worker.js": "/React-game-tic-tak-toe/service-worker.js",
-    "static/css/main.f096412c.chunk.css.map": "/React-game-tic-tak-toe/static/css/main.f096412c.chunk.css.map",
+    "static/css/main.4f0a833b.chunk.css.map": "/React-game-tic-tak-toe/static/css/main.4f0a833b.chunk.css.map",
     "static/js/2.c1809de3.chunk.js.LICENSE": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js.LICENSE",
     "static/media/index.css": "/React-game-tic-tak-toe/static/media/night_sky.899e7698.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ee3f6de.js",
     "static/js/2.c1809de3.chunk.js",
-    "static/css/main.f096412c.chunk.css",
+    "static/css/main.4f0a833b.chunk.css",
     "static/js/main.133a2334.chunk.js"
   ]
 }
