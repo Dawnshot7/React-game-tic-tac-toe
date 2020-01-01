@@ -46,11 +46,13 @@ class Board extends React.Component {
 class Input extends React.Component {
   render() {
     return (
-      <input
-        onChange={this.props.onValueChange}
-        value={this.props.value}
-        type="text"
-      />
+      <label>{this.props.label}
+        <input
+          onChange={this.props.onValueChange}
+          value={this.props.value}
+          type="text"
+        />
+      </label>
     );
   }
 }
@@ -112,17 +114,11 @@ class Game extends React.Component {
       const desc = move ?
         'Go to move #' + move :
         'Go to game start';
+      const movenote = history[move].note;
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button className="move-button" onClick={() => this.jumpTo(move)}>{desc}</button><span>       {movenote}</span> 
         </li>
-      );
-    });
-    
-    const notes = history.map((step, move) => {
-      const desc = history[move].note;
-      return (
-        <li key={move}>{desc}</li>
       );
     });
     
@@ -135,17 +131,20 @@ class Game extends React.Component {
 
     return (
       <div className="game">
+        <div><h4>{status}</h4></div>
         <div className="game-board">
           <Board
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />
         </div>
-        <Input value={this.state.currentNote} onValueChange={this.onValueChange.bind(this, 'currentNote')} />
+        <Input 
+          label='Notes:' 
+          value={this.state.currentNote} 
+          onValueChange={this.onValueChange.bind(this, 'currentNote')} 
+        />
         <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-          <ol>{notes}</ol>
+          <ol start="0">{moves}</ol>
         </div>
       </div>
     );
