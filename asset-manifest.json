@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/React-game-tic-tak-toe/static/css/main.4f0a833b.chunk.css",
-    "main.js": "/React-game-tic-tak-toe/static/js/main.133a2334.chunk.js",
-    "main.js.map": "/React-game-tic-tak-toe/static/js/main.133a2334.chunk.js.map",
-    "runtime-main.js": "/React-game-tic-tak-toe/static/js/runtime-main.6ee3f6de.js",
-    "runtime-main.js.map": "/React-game-tic-tak-toe/static/js/runtime-main.6ee3f6de.js.map",
-    "static/js/2.c1809de3.chunk.js": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js",
-    "static/js/2.c1809de3.chunk.js.map": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js.map",
-    "index.html": "/React-game-tic-tak-toe/index.html",
-    "precache-manifest.25ec15135c4cd5b0f9787b4ed4a2247a.js": "/React-game-tic-tak-toe/precache-manifest.25ec15135c4cd5b0f9787b4ed4a2247a.js",
-    "service-worker.js": "/React-game-tic-tak-toe/service-worker.js",
-    "static/css/main.4f0a833b.chunk.css.map": "/React-game-tic-tak-toe/static/css/main.4f0a833b.chunk.css.map",
-    "static/js/2.c1809de3.chunk.js.LICENSE": "/React-game-tic-tak-toe/static/js/2.c1809de3.chunk.js.LICENSE",
-    "static/media/index.css": "/React-game-tic-tak-toe/static/media/night_sky.899e7698.jpg"
+    "main.css": "/React-game-tic-tac-toe/static/css/main.34190fcf.chunk.css",
+    "main.js": "/React-game-tic-tac-toe/static/js/main.3037ce65.chunk.js",
+    "main.js.map": "/React-game-tic-tac-toe/static/js/main.3037ce65.chunk.js.map",
+    "runtime-main.js": "/React-game-tic-tac-toe/static/js/runtime-main.e935101d.js",
+    "runtime-main.js.map": "/React-game-tic-tac-toe/static/js/runtime-main.e935101d.js.map",
+    "static/js/2.c1809de3.chunk.js": "/React-game-tic-tac-toe/static/js/2.c1809de3.chunk.js",
+    "static/js/2.c1809de3.chunk.js.map": "/React-game-tic-tac-toe/static/js/2.c1809de3.chunk.js.map",
+    "index.html": "/React-game-tic-tac-toe/index.html",
+    "precache-manifest.e9764f4873638d64f760416f16a49953.js": "/React-game-tic-tac-toe/precache-manifest.e9764f4873638d64f760416f16a49953.js",
+    "service-worker.js": "/React-game-tic-tac-toe/service-worker.js",
+    "static/css/main.34190fcf.chunk.css.map": "/React-game-tic-tac-toe/static/css/main.34190fcf.chunk.css.map",
+    "static/js/2.c1809de3.chunk.js.LICENSE": "/React-game-tic-tac-toe/static/js/2.c1809de3.chunk.js.LICENSE",
+    "static/media/index.css": "/React-game-tic-tac-toe/static/media/night_sky.899e7698.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ee3f6de.js",
+    "static/js/runtime-main.e935101d.js",
     "static/js/2.c1809de3.chunk.js",
-    "static/css/main.4f0a833b.chunk.css",
-    "static/js/main.133a2334.chunk.js"
+    "static/css/main.34190fcf.chunk.css",
+    "static/js/main.3037ce65.chunk.js"
   ]
 }
