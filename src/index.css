@@ -1,5 +1,5 @@
 body {
-  background-image:url("https://dawnshot7.github.io/list_editor_website/src/images/night_sky.jpg");
+  background-image:url("../src/images/night_sky.jpg");
   font: 14px "Century Gothic", Futura, sans-serif;
   color: white;
   margin: 20px;
@@ -8,15 +8,7 @@ body {
 ol, ul {
   padding-left: 0px;
   list-style:none;
-}
-
-ul {
   display: inline;
-}
-
-h4 {
-  text-align: center;
-  color: yellow;
 }
 
 input {
@@ -30,7 +22,10 @@ label {
   margin-top: 10px;
 }
 
-.move-button {
+.status {
+  text-align: center;
+  color: yellow;
+  margin-bottom: 10px;
   width: 110px;
 }
 
@@ -42,12 +37,6 @@ label {
   clear: both;
   content: "";
   display: table;
-}
-
-.status {
-  display: block;
-  margin-bottom: 10px;
-  width: 110px;
 }
 
 .square {
@@ -65,19 +54,11 @@ label {
   width: 34px;
 }
 
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
+.move-button {
+  width: 110px;
 }
 
 .game {
   display: flex;
   flex-direction: column;
-}
-
-.game-info {
-  margin-left: 0px;
 }

@@ -57,22 +57,24 @@ class Input extends React.Component {
   }
 }
 
+//Outermost component
 class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      history: [
+      history: [ //Stores all 9 square values at each move of the game
         {
           squares: Array(9).fill(null),
           note: ''
         }
       ],
-      stepNumber: 0,
-      xIsNext: true,
-      currentNote: '',
+      stepNumber: 0, //Stores which turn in the game history the user has selected
+      xIsNext: true, //Stores whether X or O have the next turn
+      currentNote: '', //Stores the input field value to be saved with the board squares in history
     };
   }
 
+  //Handles clicks to squares on the game board
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -94,6 +96,7 @@ class Game extends React.Component {
     });
   }
 
+  //Moves to a certain move number in the game history
   jumpTo(step) {
     this.setState({
       stepNumber: step,
@@ -101,6 +104,7 @@ class Game extends React.Component {
     });
   }
 
+  //Links input field value to the variable currentNote in parent
   onValueChange(key, event) {
     this.setState({currentNote: event.target.value})
   }
@@ -110,18 +114,20 @@ class Game extends React.Component {
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
 
+    //Generates a list of buttons that reset the board its state at different move numbers
     const moves = history.map((step, move) => {
-      const desc = move ?
+      const buttonText = move ?
         'Go to move #' + move :
         'Go to game start';
-      const movenote = history[move].note;
+      const moveNote = history[move].note;
       return (
         <li key={move}>
-          <button className="move-button" onClick={() => this.jumpTo(move)}>{desc}</button><span>       {movenote}</span> 
+          <button className="move-button" onClick={() => this.jumpTo(move)}>{buttonText}</button><span>       {moveNote}</span> 
         </li>
       );
     });
     
+    //Sets the status field value
     let status;
     if (winner) {
       status = "Winner: " + winner;
@@ -131,30 +137,31 @@ class Game extends React.Component {
 
     return (
       <div className="game">
-        <div><h4>{status}</h4></div>
+        <div className="status">
+          <h4>{status}</h4>
+        </div>
         <div className="game-board">
           <Board
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />
         </div>
-        <Input 
-          label='Notes:' 
-          value={this.state.currentNote} 
-          onValueChange={this.onValueChange.bind(this, 'currentNote')} 
-        />
-        <div className="game-info">
-          <ol start="0">{moves}</ol>
+        <div className="notes">
+          <Input 
+            label='Notes:' 
+            value={this.state.currentNote} 
+            onValueChange={this.onValueChange.bind(this, 'currentNote')} 
+          />
+        </div>
+        <div className="moves">
+          <ol>{moves}</ol>
         </div>
       </div>
     );
   }
 }
 
-// ========================================
-
-ReactDOM.render(<Game />, document.getElementById("root"));
-
+//Determine if the game has been won at this turn and returns the winner or null
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -174,3 +181,6 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+// ========================================
+ReactDOM.render(<Game />, document.getElementById("root"));
